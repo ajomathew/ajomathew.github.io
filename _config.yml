@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 🖥️ Cloud | 🔄 DevOps | ⚡ Automation | 🛡️ Security 
+title: Ajo's Blog on  🖥️ Cloud | 🔄 DevOps |⚡ Automation | 🛡️ Security 
 email: ajomathiu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Everything I have experienced and experimented on cloud and Deployments
@@ -64,7 +64,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://blog.ajomathew.dev"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-x-twitter-square"
       url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -79,7 +79,7 @@ author:
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-x-twitter-square"
       url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
