@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Everything I have experienced and experimented on cloud and Deployments
 twitter_username: ajo.mathew
 github_username: ajo.mathew
-minimal_mistakes_skin: default
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
@@ -65,10 +65,10 @@ author:
       url: "https://blog.ajomathew.dev"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/ajo.mathew"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ajomathiu/"
@@ -80,13 +80,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/ajo.mathew"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://instagram.com/"
+      url: "https://www.linkedin.com/in/ajomathiu/"
     - label: "Book time with me"
       icon: "fas fa-fw fa-calendar"
       url: "https://cal.com/ajo-mathew-xiiuah/30min"
