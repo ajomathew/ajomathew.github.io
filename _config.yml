@@ -64,7 +64,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://blog.ajomathew.dev"
     - label: "Twitter"
-      icon: "fab fa-fw fa-x-twitter-square"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -79,7 +79,7 @@ author:
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-x-twitter-square"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ajo_mathew"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
