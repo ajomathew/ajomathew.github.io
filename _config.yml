@@ -123,8 +123,5 @@ analytics:
   # provider               : "google-gtag" # false (default), "google-gtag", "google-universal", "custom"
   # google:
   #   tracking_id          : "G-6GJSZXWB7F" # Replace with your Google Analytics tracking ID
-  provider:
-    google:
-      tracking_id: "G-6GJSZXWB7F"
-    custom:
+  provider: "custom"
   
