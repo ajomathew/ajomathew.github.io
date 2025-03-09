@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 🖥️ Cloud | 🔄 DevOps | ⚡ Automation | 🛡️ Security
+title: 🖥️ Cloud | 🔄 DevOps | ⚡ Automation | 🛡️ Security |
 email: ajomathiu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Everything I have experienced and experimented on cloud and Deployments
 twitter_username: ajo.mathew
 github_username: ajo.mathew
-minimal_mistakes_skin: air
+minimal_mistakes_skin: "air"
 search: true
 
 # Build settings
@@ -118,3 +118,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+analytics:
+  provider               : "google-gtag" # false (default), "google-gtag", "google-universal", "custom"
+  google:
+    tracking_id          : "G-6GJSZXWB7F" # Replace with your Google Analytics tracking ID
