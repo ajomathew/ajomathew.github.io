@@ -30,4 +30,4 @@ EOL
 # Append the content of post.md to the new file
 cat post.md >> "../_posts/$new_filename"
 
-echo "New post created: ../_posts/$new_filename$new_filename"
+echo "New post created: ../_posts/$new_filename"
