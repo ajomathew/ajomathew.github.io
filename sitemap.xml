@@ -10,7 +10,7 @@ search: exclude
     <url>
         <loc>{{page.url}}</loc>
         <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     {% endfor %}
@@ -19,8 +19,8 @@ search: exclude
     <url>
         <loc>{{post.url}}</loc>
         <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
     </url>
     {% endfor %}
 
