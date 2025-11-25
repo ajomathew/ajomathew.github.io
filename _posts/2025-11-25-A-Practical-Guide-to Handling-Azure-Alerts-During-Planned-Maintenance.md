@@ -129,3 +129,131 @@ The time format expected in `az monitor alert-processing-rule update` is `'yyyy'
 
 between 'dd' and 'HH' there '<space>' for `az monitor alert-processing-rule create` and 'T' for `az monitor alert-processing-rule update`
 
+# Some of the gotchas 
+
+
+# Azure Monitor Alert Suppression During Planned VM Downtime
+
+### *Understanding how Alert Processing Rules behave when VM availability alerts fire during suppression*
+
+When performing planned maintenance on Azure Virtual Machines, it's common to temporarily suppress alerts to avoid unnecessary notifications. **Alert Processing Rules (APRs)** in Azure Monitor allow you to mute alert **notifications** without modifying the alert rules themselves.
+
+However, the behavior of alerts *during* and *after* suppression can be confusing.
+This guide explains exactly what happens when a **VM Availability** alert fires while suppression is active.
+
+---
+
+## Scenario Overview
+
+You have:
+
+* **Metric Alert:** VM Availability (Percentage)
+* **Condition:** Average availability `< 1`
+* **Evaluation:** Every **1 minute**, lookback of **5 minutes**
+* **Scope:** Resource Group
+* **Action Groups:** Email / Teams / Webhook
+* **Alert Processing Rule:** Suppress notifications for **10 minutes**
+
+Then you:
+
+* Stop the VM
+* The alert fires
+* In Azure Portal it shows: **Fired (Suppressed)**
+
+You want to know:
+
+1. What happens when suppression ends and the VM is still off?
+2. What happens if you disable the suppression rule after 10 minutes?
+
+---
+
+## 1. When suppression ends and the VM is still off, will I get a notification?
+
+**No — you will *not* receive a notification.**
+
+### Why?
+
+#### Suppressed alerts never “re-send” notifications
+
+From Microsoft Learn:
+
+> “The fired alerts won’t invoke any of their action groups, **not even at the end of the maintenance window**.”
+> — Alert Processing Rules
+
+This means:
+
+* The alert **did** fire
+* It is **visible** in the portal
+* But the action groups were removed when it fired
+* Azure Monitor will **not** send notifications after suppression expires
+
+#### Metric alerts are stateful
+
+From Microsoft:
+
+> “Metric alerts are stateful… notifications are sent only when the **state changes** (fired → resolved → fired).”
+> — Metric Alerts Overview
+
+Since the VM stayed off, the alert state stayed as **Fired**.
+No state change → No new notification.
+
+---
+
+## 2. If I disable the alert processing rule after suppression, will I get the notification now?
+
+**No — disabling the APR will not retroactively send notifications.**
+
+Once suppression is applied:
+
+* The alert is already in "Fired" state
+* Its action groups were removed
+* Disabling APR only affects **future** alerts
+* Azure does **not** “replay” suppressed action groups
+
+From Microsoft:
+
+> “Suppression applies to alerts as they are fired. Fired alerts will not retroactively run their action groups.”
+
+So you will **not** receive any notification unless the alert **resolves and fires again**.
+
+---
+
+## How to trigger notifications after suppression
+
+Azure Monitor requires the alert to **resolve → fire again** to send notifications.
+
+### **Option A: Restart → Stop the VM**
+
+1. Start the VM → Alert **resolves**
+2. Stop it again → Alert **fires**
+3. Notifications flow normally (suppression no longer active)
+
+### **Option B: Change alert settings temporarily**
+
+Adjust threshold or evaluation → forces a new alert firing.
+
+### **Option C: Test action groups**
+
+Azure Portal → **Action Groups → Test**
+
+---
+
+## Summary Table
+
+| Scenario                                  | Notification Sent? | Reason                       |
+| ----------------------------------------- | ------------------ | ---------------------------- |
+| Alert fires during suppression            | ❌ No               | Action groups removed        |
+| Suppression ends while alert still active | ❌ No               | No state change              |
+| Disable suppression after alert fired     | ❌ No               | Past alerts don't re-trigger |
+| VM resolves → fires again                 | ✅ Yes              | New state change             |
+
+---
+
+## Key Takeaways
+
+* APR suppresses **notifications**, not the alert itself
+* Suppressed notifications are **not replayed** after the window
+* Metric alerts only fire again after a **state change**
+* If the VM stays off through suppression, you may **miss the alert completely**
+* To receive alert notifications after suppression, the alert must **resolve and re-fire**
+
