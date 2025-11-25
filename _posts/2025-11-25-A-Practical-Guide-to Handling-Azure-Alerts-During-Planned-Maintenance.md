@@ -62,7 +62,7 @@ I injected logic like the script below into the existing stop/start VM script to
 
 # Variables
 RESOURCE_GROUP="my-demo-rg"
-RULE_NAME="mpclncus-alert-dap-ahub-VM-Availability-processing-rule"
+RULE_NAME="VM-Availability-processing-rule"
 SUBSCRIPTION_ID=$(az account show --query id -o tsv)
 SCOPE="/subscriptions/$SUBSCRIPTION_ID/resourceGroups/$RESOURCE_GROUP"
 
@@ -218,5 +218,6 @@ Update an object by specifying a property path and value to set. Example: `--se
 
 The time format expected in `az monitor alert-processing-rule create` is `'yyyy'-'MM'-'dd' 'HH':'mm':'ss'`
 The time format expected in `az monitor alert-processing-rule update` is `'yyyy'-'MM'-'dd'T'HH':'mm':'ss'`
+
 
 between 'dd' it is ' ' for `create` and 'T' for `update`
