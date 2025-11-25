@@ -127,5 +127,5 @@ The time format expected in `az monitor alert-processing-rule create` is `'yyyy'
 The time format expected in `az monitor alert-processing-rule update` is `'yyyy'-'MM'-'dd'T'HH':'mm':'ss'`
 
 
-between 'dd' it is ' ' for `create` and 'T' for `update`
+between 'dd' and 'HH' there '<space>' for `az monitor alert-processing-rule create` and 'T' for `az monitor alert-processing-rule update`
 
