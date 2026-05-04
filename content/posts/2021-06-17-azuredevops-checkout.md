@@ -31,3 +31,6 @@ I tried cleaning the checkout dir in my custom Azure DevOps build agent. After a
 This was causing conflict when the CI build runs.
 
 _Lession learned_ : Don't create a branch named as `release` if you are running CI with Azure DevOps
+
+
+

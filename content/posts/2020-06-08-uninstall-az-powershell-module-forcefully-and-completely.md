@@ -22,7 +22,7 @@ tags:
 - Azure
 - Powershell
 title: Uninstall Az Powershell Module forcefully and completely
-type: post
+type: posts
 ---
 
 I'm primarily using PowerShell to address Azure automation activities from running from local to Azure itself. The most painful task encountered is about upgrading PowerShell Az modules and making it work with VsCode.
@@ -52,3 +52,6 @@ if ($PSVersionTable.PSEdition -eq 'Desktop' -and (Get-Module -Name AzureRM -List
     Install-Module -Name Az -AllowClobber -Scope CurrentUser
 }
   ```
+
+
+

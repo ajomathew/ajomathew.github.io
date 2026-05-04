@@ -38,3 +38,6 @@ With Priority 500 I have set up a rule to block all internet access from Virtual
 | 440 | AzureFrontDoor.Frontend | All | All| Virtualnetwork(Tag) | AzureFrontDoor.Frontend(tag) | Allow|
 | 450 | AzureResourceManager | All | All| Virtualnetwork(Tag) | AzureResourceManager(tag) | Allow|
 | 500 | Block Outbound internet | Any | Any | Virtualnetwork(Tag) | Internet (tag)| Deny|
+
+
+

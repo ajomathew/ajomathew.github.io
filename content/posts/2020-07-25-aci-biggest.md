@@ -48,3 +48,6 @@ It would be great if we can get a confirmation about this behaviour in Azure doc
 ## If you want to test
 
 Go ahead and launch An Azure Container instance - easier if you can do it with this [**ARM template**](https://github.com/Azure/azure-quickstart-templates/tree/master/201-aci-wordpress-vnet) to deploy a wordpress blog with application gateway
+
+
+

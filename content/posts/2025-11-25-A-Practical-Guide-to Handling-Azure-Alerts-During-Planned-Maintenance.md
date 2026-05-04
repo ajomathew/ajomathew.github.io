@@ -258,3 +258,6 @@ Azure Portal → **Action Groups → Test**
 * If the VM stays off through suppression, you may **miss the alert completely**
 * To receive alert notifications after suppression, the alert must **resolve and re-fire**
 
+
+
+

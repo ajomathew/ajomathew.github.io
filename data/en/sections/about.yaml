@@ -1,0 +1,35 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Azure DevOps Architect & Cloud Platform Manager
+# your company information
+company:
+  name: EY GLOBAL DELIVERY SERVICES
+
+# a summary about you
+summary: 'Azure Cloud & DevOps Architect with 13+ years of experience in designing, deploying, and managing enterprise-scale Azure Data Analytics platforms. Proven expertise in Azure infrastructure, DevOps automation, cloud security, and CI/CD pipelines. Skilled in Terraform, ARM templates, and Kubernetes, with a strong focus on cloud migrations, containerization, and infrastructure as code (IaC). Adept at leading teams, optimizing cloud solutions, and implementing secure on-prem-to-cloud connectivity.'
+
+# your social links
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "mailto:ajomathiu@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/ajomathew"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://linkedin.com/in/ajomathiu"
+
+resourceLinks:
+- title: "My Resume"
+  url: "files/resume.pdf"

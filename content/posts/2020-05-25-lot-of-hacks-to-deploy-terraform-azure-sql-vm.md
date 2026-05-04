@@ -31,7 +31,7 @@ tags:
 - SQL
 - terraform
 title: 'After (lot of ) Hacks - A working way to deploying  Azure SQL on Virtual Machine using terraform'
-type: post
+type: posts
 url: /2020/05/25/lot-of-hacks-to-deploy-terraform-azure-sql-vm/
 ---
 
@@ -86,3 +86,6 @@ Another approach I should try is by deploying all resources of SQL VM except [`a
 #### SQL ARM Template referenced in
 
 {% gist a3bf1bc6ce00e9e6967af917ae20c222 %}
+
+
+

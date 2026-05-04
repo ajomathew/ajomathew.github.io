@@ -31,3 +31,6 @@ root@pop-os:/boot/efi/EFI#
 ```
 
 There is another [reddit page](https://www.reddit.com/r/pop_os/comments/gjsr6r/psa_how_to_dual_boot_pop_os_with_windows_with_a/) for your reference to knwo the details.
+
+
+

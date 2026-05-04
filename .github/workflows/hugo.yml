@@ -34,7 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.122.0
+      HUGO_VERSION: 0.161.1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,6 +45,14 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install npm dependencies
+        run: npm ci
 
       - name: Install Hugo CLI
         run: |

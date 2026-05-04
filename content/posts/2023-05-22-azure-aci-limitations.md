@@ -38,3 +38,6 @@ Azure Container instance private IP address does not change when restarted
 Even if Azure report error while restarting ACI it in actual restarts – Yet to be updated by Azure Engineering team
 If you want to test
 Go ahead and launch An [Azure Container](https://github.com/Azure/azure-quickstart-templates/tree/master/201-aci-wordpress-vnet) instance – easier if you can do it with this ARM template to deploy a wordpress blog with application gateway
+
+
+

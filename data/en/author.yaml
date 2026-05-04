@@ -1,0 +1,18 @@
+# some information about you
+name: "Ajo Mathew"
+nickname: "Ajo"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/ajo.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "ajomathiu@gmail.com"
+  github: ajomathew
+  linkedin: ajomathiu
+
+# some summary about what you do
+summary:
+  - I am an Azure Cloud & DevOps Architect
+  - I specialize in DevOps automation and cloud security
+  - I build secure scalable platforms
+  - I love to mentor and drive cloud transformation

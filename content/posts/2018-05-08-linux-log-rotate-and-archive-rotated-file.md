@@ -25,7 +25,7 @@ tags:
 - Azure
 - Blob
 title: Linux Log Rotate and archive rotated file.
-type: post
+type: posts
 ---
 I was checking an article on how to upload archived logs to azure blob.
 As initial set up I've updated logrotate.conf(`/etc/logrotate.conf`) with below settings.
@@ -88,3 +88,6 @@ May 8 17:07:40 localhost chronyd[561]: Selected source 139.59.43.68
 
 If you want to implement logrotate to blog storage, the reference URL is [dowdandassociates.com/blog/](http://www.dowdandassociates.com/blog/content/howto-rotate-logs-to-s3) .
 Above link is about logrotate to S3 hourly using `s3cmd`. I would be using `azcopy` for blob storage upload.
+
+
+

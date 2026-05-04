@@ -21,7 +21,7 @@ tags:
 - PowerShell
 - DSC
 title: Grant SQL Server account access to Lock Pages in Memory using PowerShell DSC.
-type: post
+type: posts
 ---
 Lock Pages in Memory is a setting that can be set on 64-bit operating systems that essentially tell Windows not to swap out SQL Server memory to disk.
 
@@ -30,3 +30,6 @@ I was implementing SQL server hardening via PowerShell DSC and one of the requir
 I converted this to a DSC module for my use. The code snippet is added below.
 
 {% gist 4d1f64193d068854227080d5234fd336 %}
+
+
+

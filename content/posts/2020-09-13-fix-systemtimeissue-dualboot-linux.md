@@ -18,3 +18,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 Reference [Link](https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/) to read more on it
+
+
+
