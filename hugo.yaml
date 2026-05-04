@@ -128,6 +128,17 @@ params:
         # diaspora: true
         # mastodon: true
 
+    # Enable and configure search
+    search:
+      enable: true
+      services:
+        # Use hugo's built in search. It generates a JSON file containing all the content in your site and uses it for client side search.
+        hugo:
+          # The name of the generated JSON file. Default is "index.json"
+          filename: index.json
+          # The fields to include in the generated JSON file. Default is ["title", "content", "summary", "tags", "categories"].
+          fields: ["title", "content", "summary", "tags", "categories"]
+
     # Enable & configure "Notes" features
     notes:
       enable: true
