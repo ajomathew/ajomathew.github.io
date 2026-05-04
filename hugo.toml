@@ -1,0 +1,28 @@
+baseURL = "https://ajomathew.github.io/"
+disablePathToLower = true
+locale = "en-us"
+title = "Ajo's Blog on 🖥️ Cloud 🔄 DevOps ⚡ Automation 🛡️ Security"
+theme = "m10c"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[pagination]
+  pagerSize = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[params]
+  author = "Ajo Mathew"
+  description = "Blog about Cloud, DevOps, Automation, and Security"
+  menu_item_separator = " - "
+  
+  [[params.social]]
+    icon = "brand-github"
+    name = "Github"
+    url = "https://github.com/ajomathew"

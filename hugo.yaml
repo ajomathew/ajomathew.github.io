@@ -1,9 +1,0 @@
-baseURL: https://ajomathew.github.io/
-disablePathToLower: true
-locale: en-us
-title: Ajo's Blog on 🖥️ Cloud 🔄 DevOps ⚡ Automation 🛡️ Security
-theme: m10c
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
