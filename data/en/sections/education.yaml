@@ -1,0 +1,19 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+degrees:
+- name: B.Tech in Computer Science
+  icon: fa-graduation-cap
+  timeframe: Jun 2007 - May 2011
+  institution:
+    name: ST.JOSEPH'S COLLEGE OF ENGINEERING & TECHNOLOGY, PALAI
+  grade:
+    scale: Percentage
+    achieved: 68.33
+    outOf: 100

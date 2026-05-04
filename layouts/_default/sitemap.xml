@@ -1,0 +1,40 @@
+{{- $enabledLanguages := where hugo.Sites "Language.Disabled" false -}}
+{{- $enabledLanguageCodes := slice -}}
+{{- range $enabledLanguages }}
+  {{- $enabledLanguageCodes = $enabledLanguageCodes | append .Language.Lang }}
+{{- end }}
+{{- $posts := where .Site.RegularPages "Type" "posts" -}}
+{{- $posts = where $posts "Params.hidden" "!=" true -}}
+{{- $posts = sort $posts "Permalink" "asc" -}}
+{{- $about := where .Site.RegularPages "RelPermalink" "/about/" -}}
+{{- $pages := append $posts $about -}}
+{{- $seen := newScratch -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{{- range $pages }}
+  {{- if not ($seen.Get .Permalink) }}
+    {{- $seen.Set .Permalink true }}
+    {{- if in $enabledLanguageCodes .Language.Lang }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{- end }}
+    {{- with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
+    {{- end }}
+    {{- if ge .Sitemap.Priority 0.0 }}
+    <priority>{{ .Sitemap.Priority }}</priority>
+    {{- end }}
+    {{- if .IsTranslated }}
+      {{- range .Translations }}
+        {{- if in $enabledLanguageCodes .Language.Lang }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  </url>
+    {{- end }}
+  {{- end }}
+{{- end }}
+</urlset>

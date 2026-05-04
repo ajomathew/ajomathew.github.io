@@ -1,0 +1,55 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  filter: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+  
+- name: Cloud
+  filter: "cloud"
+  
+- name: DevOps
+  filter: "devops"
+
+- name: IaC
+  filter: "iac"
+
+- name: Other
+  filter: "other"
+
+# Your Skills.
+skills:
+- name: Azure Cloud
+  summary: "Expert in Azure Private Endpoints, RBAC, IAM, Databricks, Synapse Analytics, Data Factory, Compute Workloads, FrontDoor, APIM, Keyvault, ADLS, SSO."
+  categories: ["cloud"]
+
+- name: AWS Cloud
+  summary: "Experienced in EC2, S3, Route 53-DNS, CloudFront, ELB, Auto Scaling, Elastic Beanstalk."
+  categories: ["cloud"]
+
+- name: DevOps Tools
+  summary: "Proficient in Azure DevOps, GitHub, Docker, Kubernetes, WhiteSource, SonarQube, Ansible, and Checkov."
+  categories: ["devops"]
+
+- name: Infrastructure as Code
+  summary: "Strong focus on cloud migrations and automation using Terraform, Azure Bicep, and ARM templates."
+  categories: ["iac"]
+
+- name: Scripting
+  summary: "Automation and scripting using PowerShell, Shell/bash, and Python."
+  categories: ["other"]
+
+- name: Databases
+  summary: "Database administration and management of MSSQL, Azure SQL, Azure CosmosDB, and AWS RDS."
+  categories: ["other"]
+
+- name: Operating Systems
+  summary: "Administration of Windows Server (2008-2012) and Linux Server (Ubuntu, Redhat)."
+  categories: ["other"]

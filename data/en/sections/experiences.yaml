@@ -1,0 +1,60 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+# Your experiences
+experiences:
+- company:
+    name: EY GLOBAL DELIVERY SERVICES
+    overview: Global professional services firm
+  positions:
+  - designation: Azure DevOps Architect & Cloud Platform Manager
+    start: Feb 2018
+    responsibilities:
+    - Designed and deployed secure, scalable Azure Data Analytics Platforms using Terraform, ARM templates, and Azure DevOps.
+    - Implemented Azure Cloud Security Best practices such as Vnet Injection, Azure Private Endpoint, and Secure networking.
+    - Led Azure Cloud Migration and containerization strategies, optimizing cost and performance.
+    - Configured CI/CD pipelines and vulnerability assessment tools to enhance application security and compliance.
+    - Led a team of 10 engineers, managed project resourcing, and actively contributed to RFPs and RFIs.
+
+- company:
+    name: GOOD METHODS GLOBAL (CARESTACK)
+    overview: Cloud-based Dental Practice Management System
+  positions:
+  - designation: Cloud Deployment Engineer
+    start: June 2016
+    end: Feb 2018
+    responsibilities:
+    - Migrated full AWS infrastructure to Azure.
+    - Set up application build and deployment pipelines using TeamCity, Azure DevOps, and Octopus Deploy.
+    - Translated entire application deployment platform to ARM templates for automated provisioning.
+    - Implemented performance monitoring via NewRelic and Azure Insights.
+
+- company:
+    name: MINDCURV
+    overview: Global direct seller of premium household appliances
+  positions:
+  - designation: Infrastructure Specialist Level 2
+    start: Feb 2016
+    end: June 2016
+    responsibilities:
+    - Managed AWS resources including EC2, ELB, Auto Scaling, S3, and Route 53 DNS.
+    - Set up CI/CD pipelines for application and infrastructure deployment.
+    - Deployment and troubleshooting of containerized applications.
+
+- company:
+    name: ACCENTURE SERVICE PVT LTD. HYDERABAD
+    overview: Global professional services firm
+  positions:
+  - designation: AWS Platform Engineer / Software Engineer
+    start: Jun 2011
+    end: Feb 2016
+    responsibilities:
+    - Managed more than 500 websites built using custom platform hosted in multiple AWS EC2 regions.
+    - Created and maintained AWS infrastructure (EC2, ELB, Auto Scaling, S3, Route 53).
+    - Implemented CI/CD with Jenkins and AWS OpsWorks.
+    - Administered Tridion CMS for enterprise websites and managed migration to AWS cloud.
