@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: Azure
+categories: ["Azure"]
 data: 2023-05-22 06:31:31 +0530
 date: '2023-05-22T00:00:00Z'
 excerpt: Azure NSG and Azure Service Tags to block all connection except to Azure Portal, this is an undocumented feature available with Azure

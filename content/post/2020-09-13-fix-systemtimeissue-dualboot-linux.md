@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: linux
+categories: ["linux"]
 data: 2020-09-13 06:31:31 +0530
 date: '2020-09-13T00:00:00Z'
 excerpt: Dual booting windows and linux can show different time in linux and windows. This post shows a fix to that.

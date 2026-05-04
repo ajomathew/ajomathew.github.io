@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: azure
+categories: ["azure"]
 data: 2020-07-25 06:31:31 +0530
 date: '2020-07-25T00:00:00Z'
 excerpt: Some limitations of Azure Container instances

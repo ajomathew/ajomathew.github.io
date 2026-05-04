@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: Azure
+categories: ["Azure"]
 data: 2021-10-30 06:31:31 +0530
 date: '2021-10-30T00:00:00Z'
 excerpt: How to Dual boot Windows and POP-OS with UIEF

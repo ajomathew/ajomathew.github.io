@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: azure-devops
+categories: ["azure-devops"]
 data: 2021-06-17 06:31:31 +0530
 date: '2021-06-17T00:00:00Z'
 excerpt: Azure DevOps CI failure upon checkout

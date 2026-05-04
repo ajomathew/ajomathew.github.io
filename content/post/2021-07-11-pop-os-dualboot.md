@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: linux
+categories: ["linux"]
 data: 2021-07-11 06:31:31 +0530
 date: '2021-07-11T00:00:00Z'
 excerpt: How to Dual boot Windows and POP-OS with UIEF

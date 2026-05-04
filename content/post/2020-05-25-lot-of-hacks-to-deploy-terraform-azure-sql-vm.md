@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: azure
+categories: ["azure"]
 date: '2020-05-25T00:00:00Z'
 excerpt: 'This post gives you a method to join ARM template and #terraform to deploy\na SQL VM in #Azure'
 last_modified_at: 2020-05-25 02:00:00.000000000 +05:30

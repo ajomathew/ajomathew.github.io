@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: SMTP
+categories: ["SMTP"]
 date: '2020-05-15T00:00:00Z'
 excerpt: Send grid api key use to SMTP mail via powershell
 last_modified_at: 2020-05-15 06:31:31 +0530

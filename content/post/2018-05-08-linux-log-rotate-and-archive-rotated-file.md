@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: linux
+categories: ["linux"]
 date: '2018-05-08T00:00:00Z'
 excerpt: How to log rotate and upload files Azure blob
 last_modified_at: 2018-05-08 16:54:37.000000000 +05:30

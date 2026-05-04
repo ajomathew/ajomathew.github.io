@@ -1,6 +1,6 @@
 ---
 author: ajo_mathew
-categories: browser
+categories: ["browser"]
 date: '2020-05-21T00:00:00Z'
 excerpt: Fix to allow vivaldi work after updating
 last_modified_at: 2020-05-21 06:31:31 +0530
