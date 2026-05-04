@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - hugo
   workflow_dispatch:
 
 permissions:
