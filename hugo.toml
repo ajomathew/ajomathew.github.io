@@ -16,6 +16,21 @@ unsafe = true
     name = "Home"
     url = "/"
     weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
 
 [params]
   author = "Ajo Mathew"
@@ -26,3 +41,7 @@ unsafe = true
     icon = "brand-github"
     name = "Github"
     url = "https://github.com/ajomathew"
+  [[params.social]]
+    icon = "brand-linkedin"
+    name = "LinkedIn"
+    url = "https://linkedin.com/in/ajomathiu"
