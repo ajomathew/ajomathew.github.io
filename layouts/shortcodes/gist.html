@@ -1,0 +1,6 @@
+{{- $user := .Get 0 -}}
+{{- $id := .Get 1 -}}
+{{- if not $id -}}
+  {{- $id = $user -}}
+{{- end -}}
+<script src="https://gist.github.com/{{ $user }}/{{ $id }}.js"></script>

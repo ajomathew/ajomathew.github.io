@@ -1,0 +1,67 @@
+baseURL = "https://blog.ajomathew.dev/"
+locale = "en-us"
+title = "Ajo's Blog"
+theme = "hugo-theme-m10c"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  pagerSize = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  author = "Ajo Mathew"
+  description = "Cloud, DevOps, Automation, Security. Everything I have experienced and experimented on cloud and deployments."
+  avatar = "/assets/images/bio-gi.png"
+  menu_item_separator = " - "
+
+[[params.social]]
+  icon = "brand-github"
+  name = "GitHub"
+  url = "https://github.com/ajo.mathew"
+
+[[params.social]]
+  icon = "brand-x"
+  name = "Twitter"
+  url = "https://twitter.com/ajo_mathew"
+
+[[params.social]]
+  icon = "brand-linkedin"
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/ajomathiu/"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "portfolio"
+  name = "Portfolio"
+  url = "/portfolio/"
+  weight = 5

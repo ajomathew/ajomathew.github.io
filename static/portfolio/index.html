@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ajo Mathew</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Light Mode */
+        .bg-primary {
+            background-color: #0078D4;
+        }
+
+        /* Azure Blue */
+        .bg-secondary {
+            background-color: #8DB9E2;
+        }
+
+        /* Soft Blue */
+        .bg-light {
+            background-color: #F4F8FB;
+        }
+
+        /* Very Light Blue */
+        .bg-accent {
+            background-color: #EDEDED;
+        }
+
+        /* Soft Gray */
+        .text-primary {
+            color: #333333;
+        }
+
+        /* Dark Gray for readability */
+
+        /* Sidebar */
+        .sidebar {
+            width: 64px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .sidebar:hover {
+            width: 200px;
+        }
+
+        .sidebar a span {
+            display: none;
+        }
+
+        .sidebar:hover a span {
+            display: inline;
+        }
+
+        /* Dark Mode */
+        .dark-mode .bg-primary {
+            background-color: #1E1E1E;
+        }
+
+        /* Dark Gray */
+        .dark-mode .bg-secondary {
+            background-color: #252526;
+        }
+
+        /* Darker Gray */
+        .dark-mode .bg-light {
+            background-color: #3B3B3B;
+        }
+
+        /* Mid Gray */
+        .dark-mode .bg-accent {
+            background-color: #0078D4;
+        }
+
+        /* Azure Blue for contrast */
+        .dark-mode .text-primary {
+            color: #766a6a;
+        }
+
+        /* White for contrast */
+        .dark-mode body {
+            background-color: #1E1E1E;
+            color: #211d1d;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJSZXWB7F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6GJSZXWB7F');
+    </script>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "qll18mcw3c");
+    </script>
+</head>
+
+<body class="bg-light text-gray-800">
+    <div class="flex">
+        <style>
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+        </style>
+        <nav class="sidebar bg-primary text-white min-h-screen p-4 flex flex-col items-center">
+            <ul class="w-full">
+                <li class="mb-6"><a href="#about" class="flex items-center text-lg"><i class="fas fa-user"></i><span
+                            class="ml-2">About</span></a></li>
+                <li class="mb-6"><a href="#certifications" class="flex items-center text-lg"><i
+                            class="fas fa-certificate"></i><span class="ml-2">Certifications</span></a></li>
+                <li class="mb-6"><a href="#skills" class="flex items-center text-lg"><i class="fas fa-code"></i><span
+                            class="ml-2">Skills</span></a></li>
+
+                <li class="mb-6"><a href="#experience" class="flex items-center text-lg"><i
+                            class="fas fa-briefcase"></i><span class="ml-2">Experience</span></a></li>
+
+                <li class="mb-6"><a href="#education" class="flex items-center text-lg"><i
+                            class="fas fa-graduation-cap"></i><span class="ml-2">Education</span></a></li>
+
+                <li class="mb-6"><a href="#contact" class="flex items-center text-lg"><i
+                            class="fas fa-envelope"></i><span class="ml-2">Contact</span></a></li>
+            </ul>
+            <button onclick="toggleDarkMode()"
+                class="mt-auto bg-secondary text-white py-2 px-4 rounded-lg flex items-center">
+                <i class="fas fa-moon"></i>
+                <span class="ml-2 hidden">Switch</span>
+            </button>
+            <style>
+                button:hover span {
+                    display: inline;
+                }
+            </style>
+        </nav>
+        <div class="flex-1">
+            <header class="bg-primary text-white p-6 text-center">
+                <h1 class="text-4xl font-bold">Ajo Mathew</h1>
+                <h2 class="text-xl mt-2">
+                    <span class="highlight">🖥️ Cloud Architect</span> |
+                    <span class="highlight">🔄 DevOps Strategist</span> |
+                    <span class="highlight">⚡ Automation Expert</span>
+                </h2>
+            </header>
+            <main class="container mx-auto p-12 space-y-16">
+                <section id="about" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-user"></i> About Me</h2>
+                    <p class="text-lg">I am a highly skilled Cloud and DevOps Architect with over 12 years of experience
+                        in designing, deploying, and managing cloud infrastructure across Azure and AWS. My expertise
+                        lies in cloud automation, DevOps implementation, infrastructure as code (IaC), and CI/CD
+                        pipeline development to optimize application performance and scalability.<br><br>At EY Global
+                        Delivery Services, I lead cloud platform architecture for data analytics workloads, ensuring
+                        security, automation, and efficiency while managing stakeholders and mentoring teams.
+                        Previously, at Good Methods Global (CareStack) and Mindcurv, I played a key role in cloud
+                        migrations, infrastructure automation, and performance optimization. My early career at
+                        Accenture involved managing large-scale AWS environments, CMS migrations, and enterprise cloud
+                        transformations.<br><br>With a strong background in Terraform, Azure DevOps, Kubernetes, and
+                        CI/CD automation, I am passionate about driving innovation, improving cloud efficiency, and
+                        leading teams toward cutting-edge cloud solutions.</p>
+                </section>
+                <section id="certifications" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-certificate"></i> Certifications</h2>
+                    <ul class="list-disc pl-5 text-lg">
+                        <li><a
+                                href="https://learn.microsoft.com/api/credentials/share/en-us/ajomathew/6B4464E7CAAEAC14?sharingId=24CB62630ACB0427">Azure
+                                Solutions Architect Expert</a></li>
+
+                        <li><a
+                                href="https://learn.microsoft.com/api/credentials/share/en-us/ajomathew/21D69048DEBF0E49?sharingId=24CB62630ACB0427">Microsoft
+                                Certified: DevOps Engineer Expert</a></li>
+                        <li>
+                            <a href="https://www.credly.com/badges/80bc733b-895b-409a-adbf-f55a99d12261/public_url">HashiCorp
+                                Certified: Terraform Associate (003)</a>
+                        </li>
+                    </ul>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="80bc733b-895b-409a-adbf-f55a99d12261" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </section>
+                <section id="skills" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-tools"></i> Skills</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fab fa-microsoft"></i> Azure</h3>
+                            <p class="text-lg">Azure Private Endpoints, Azure Databricks, Azure Synapse Analytics, Azure
+                                Data Factory, App Service, Azure Automation, Storage / ADLS, Azure VM, Azure PowerShell
+                                API, Azure Container Service, Azure Container Registry, Azure SSO</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-tools"></i> DevOps</h3>
+                            <p class="text-lg">Azure DevOps, GitHub, TeamCity, Octopus Deploy, Terraform, Docker /
+                                Kubernetes</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-code"></i> Infrastructure as Code</h3>
+                            <p class="text-lg">Azure Resource Management Template, Azure Biceps, Terraform, Ansible</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fab fa-aws"></i> AWS</h3>
+                            <p class="text-lg">AWS EC2, S3, Route 53-DNS, CloudFront, ELB, Auto Scaling, Elastic
+                                Beanstalk</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-database"></i> Database</h3>
+                            <p class="text-lg">MSSQL, MySQL, Azure SQL, Azure CosmosDB, AWS RDS</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-terminal"></i> Scripting</h3>
+                            <p class="text-lg">PowerShell, Shell/bash, Python</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-search"></i> Search Engine</h3>
+                            <p class="text-lg">Azure Search, Apache Solr, Elastic Search</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-server"></i> Application/Web Servers
+                            </h3>
+                            <p class="text-lg">Azure WebApp, IIS, Apache, Tomcat, Nginx</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-desktop"></i> Operating Systems</h3>
+                            <p class="text-lg">Windows Server 2008/2008R2/2012, Linux Server- Ubuntu / Redhat(6-7)</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-tools"></i> Other Tools</h3>
+                            <p class="text-lg">SonarQube, Jira, SpaceWalk, WhiteSource, Packer, Nagios, NewRelic,
+                                Application Insights</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="experience" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-briefcase"></i> Experience</h2>
+                    <h2 class="text-3xl font-semibold mb-4">EY Global Delivery Services</h2>
+                    <p class="text-lg font-semibold">(Feb 2018 - Present)</p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <!-- <h3 class="text-xl font-bold">EY Global Delivery Services</h3> -->
+                        <p class="text-lg font-semibold">Azure DevOps Architect</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Lead the design, deployment, and management of <strong>Azure DevOps</strong> platforms
+                                for <strong>Data Analytics workloads</strong> across the <strong>APAC</strong> region.
+                            </li>
+                            <li>Participate in <strong>RFP/RFI processes</strong>, providing technical expertise to
+                                shape cloud-based solutions.</li>
+                            <li>Manage key <strong>stakeholders</strong>, project <strong>resourcing</strong>, and a
+                                <strong>team of 10 members</strong> across multiple projects.
+                            </li>
+                            <li>Drive <strong>competency enablement</strong> by leading <strong>internal training
+                                    initiatives</strong>, organizing “Lunch and Learn” sessions, and managing
+                                <strong>SME groups</strong>.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Cloud Platform Architect</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li><strong>Designed and provisioned</strong> Azure infrastructure for a <strong>Data
+                                    Analytics Platform</strong> for a <strong>Hong Kong-based client</strong> to process
+                                on-premises data.</li>
+                            <li>Established <strong>secure connections</strong> between <strong>on-prem and
+                                    cloud</strong> while ensuring strict security isolation.</li>
+                            <li>Developed <strong>Terraform modules</strong> to streamline platform component
+                                provisioning.</li>
+                            <li>Collaborated with <strong>Data Analytics Solution Architects</strong> to align
+                                infrastructure with business objectives.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Cloud Platform Architect / Manager</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li><strong>Designed and implemented</strong> a <strong>metadata-driven ETL and Data
+                                    Ingestion Platform</strong> on Azure.</li>
+                            <li>Built <strong>robust and secure Data Analytics infrastructure</strong> leveraging
+                                <strong>Synapse Analytics, Databricks, ADLS Gen2, and Power BI</strong>.
+                            </li>
+                            <li>Established <strong>network and security architecture</strong> to meet
+                                <strong>enterprise security standards</strong> for <strong>on-prem to cloud
+                                    connectivity</strong>.
+                            </li>
+                            <li>Developed <strong>Azure DevOps pipelines</strong> to automate <strong>CI/CD for Data
+                                    Factory, Databricks, and Synapse Analytics</strong>.</li>
+                            <li>Led <strong>infra-automation</strong> using <strong>ARM templates</strong>, managing and
+                                updating Azure resources dynamically.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Cloud Platform & DevOps Manager</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Designed a <strong>cloud platform</strong> to support <strong>M&A assisting
+                                    tools</strong>, including <strong>CI/CD & IAC</strong>.</li>
+                            <li>Led collaborations with <strong>senior stakeholders and development leads</strong> to
+                                architect enterprise <strong>cloud platforms</strong>.</li>
+                            <li>Implemented <strong>secure networking infrastructure</strong> ensuring
+                                <strong>controlled access for developers and testers</strong>.
+                            </li>
+                            <li>Defined <strong>Infrastructure as Code (IaC)</strong> strategies using
+                                <strong>Terraform</strong> for multiple environments (<strong>Dev, Test, UAT, Load
+                                    Test</strong>).
+                            </li>
+                            <li>Enforced <strong>code commit, branching strategies, and security gates</strong> within
+                                <strong>Azure DevOps pipelines</strong>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Platform Enablement Manager – Azure</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Led <strong>cloud migration</strong> of internally developed <strong>Data &
+                                    Analytics</strong> solutions to <strong>PaaS and containerized
+                                    environments</strong>.</li>
+                            <li>Implemented <strong>Data Lineage Solutions</strong> backed by <strong>Neo4j
+                                    Database</strong> and <strong>Keylines</strong> for visualization.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="experience" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4">Good Methods Global (CareStack)</h2>
+                    <p class="text-lg font-semibold">(Jun 2016 - Feb 2018)</p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Cloud Deployment Engineer</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Led the <strong>migration of the full AWS stack to Azure</strong>, ensuring seamless
+                                transition and optimized performance.</li>
+                            <li>Designed and implemented <strong>CI/CD pipelines</strong> using <strong>TeamCity, Azure
+                                    DevOps, and Octopus Deploy</strong> for automated application deployment.</li>
+                            <li>Developed <strong>Infrastructure as Code (IaC)</strong> using <strong>ARM
+                                    templates</strong>, enabling end-to-end <strong>automated provisioning</strong> of
+                                new environments.</li>
+                            <li>Established <strong>standardized deployment processes</strong> for application stacks,
+                                improving efficiency and reducing downtime.</li>
+                            <li>Implemented <strong>application performance monitoring</strong> using <strong>NewRelic
+                                    and Azure Application Insights</strong> for proactive issue detection and
+                                resolution.</li>
+                            <li>Designed and deployed <strong>Azure Automation</strong> solutions for <strong>cost
+                                    management</strong>, optimizing resource utilization.</li>
+                            <li>Managed <strong>database schema version control and CI/CD pipelines</strong>, ensuring
+                                smooth and consistent database updates.</li>
+                            <li>Developed a <strong>Business Continuity Plan (BCP)</strong> for the CareStack product
+                                platform, ensuring resilience and disaster recovery readiness.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="experience" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4">Mindcurv</h2>
+                    <p class="text-lg font-semibold">(Feb 2016 – Jun 2016)</p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg font-semibold">Infrastructure Specialist Level 2</p>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Set up <strong>CI/CD pipelines</strong> for both <strong>application and infrastructure
+                                    deployment</strong> in AWS.</li>
+                            <li>Managed AWS services including <strong>EC2, ELB, Auto Scaling, S3, and Route
+                                    53-DNS</strong> for multiple projects.</li>
+                            <li>Deployed and maintained <strong>Hybris applications</strong> using
+                                <strong>Jenkins</strong>.
+                            </li>
+                            <li>Deployed and troubleshot <strong>Dockerized applications</strong> in production
+                                environments.</li>
+                            <li>Implemented <strong>Nagios-based monitoring</strong>, creating custom scripted health
+                                checks for infrastructure components.</li>
+                            <li>Set up and managed <strong>clustered Elasticsearch nodes</strong> for <strong>Hybris
+                                    applications</strong>.</li>
+                            <li>Conducted <strong>disaster recovery operations</strong> for <strong>MySQL
+                                    databases</strong> and application servers.</li>
+                            <li>Configured <strong>Logstash and Kibana</strong> for centralized log monitoring and
+                                analysis.</li>
+                            <li>Performed <strong>RedHat server security patching</strong> to maintain compliance and
+                                prevent vulnerabilities.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="experience" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4">Accenture Service PVT Ltd</h2>
+                    <p class="text-lg font-semibold">(Jun 2011 – Feb 2016)</p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <h4 class="text-lg font-semibold">AWS Platform Engineer for Global Pharma Firm (Software
+                            Engineer)</h4>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Managed and maintained <strong>500+ websites</strong> hosted on <strong>AWS EC2</strong>
+                                across multiple regions.</li>
+                            <li>Provisioned and configured <strong>AWS resources</strong> such as <strong>EC2, ELB, Auto
+                                    Scaling, S3, Route 53-DNS</strong>.</li>
+                            <li>Implemented <strong>CI/CD pipelines</strong> with <strong>Jenkins (CI) and AWS OpsWorks
+                                    (CD)</strong> for seamless deployments.</li>
+                            <li>Automated infrastructure provisioning using <strong>AWS CloudFormation</strong> for
+                                scalable and repeatable deployments.</li>
+                            <li>Monitored <strong>application and infrastructure health</strong> using <strong>AWS
+                                    CloudWatch, NewRelic, and CopperEgg</strong>.</li>
+                            <li>Administered <strong>Tridion CMS</strong>, providing application-level support and
+                                maintenance for enterprise websites.</li>
+                            <li>Configured <strong>Solr-based enterprise search</strong> solutions for multiple
+                                websites.</li>
+                            <li>Set up <strong>Windows Domain Controllers</strong> with replication inside <strong>AWS
+                                    VPC</strong>.</li>
+                            <li>Implemented <strong>log rotation strategies</strong> for application and cloud
+                                resources, archiving logs on <strong>S3, Glacier, and RedShift</strong>.</li>
+                            <li>Ensured <strong>disaster recovery</strong> readiness and automated backup strategies for
+                                critical applications and databases.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <h4 class="text-lg font-semibold">AWS Platform Engineer for CMS Migration (Assistant Software
+                            Engineer)</h4>
+                        <ul class="list-disc pl-5 text-lg">
+                            <li>Led the migration of <strong>multiple of websites- 198</strong> to <strong>Tridion
+                                    CMS</strong> hosted on <strong>AWS</strong>.</li>
+                            <li>Managed and maintained <strong>virtual machines (VMs)</strong> and migrated workloads
+                                from legacy vendors to <strong>AWS Cloud</strong>.</li>
+                            <li>Conducted <strong>administrative tasks</strong> for <strong>Tridion Content Management
+                                    Engine (CME) and Broker Databases</strong>.</li>
+                            <li>Upgraded <strong>Tridion CME versions</strong> and ensured backward compatibility of
+                                applications.</li>
+                            <li>Provided <strong>application-level support</strong> for <strong>198 websites and legacy
+                                    server applications</strong>.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="education" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg"><strong>B.Tech in Computer Science : 68.33 %</strong> - St. Joseph's College
+                            of Engineering & Technology (2007 - 2011)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                        <p class="text-lg"><strong>Intermediate – Science : 91%</strong> - St. Mary's HSS Bharananganam
+                            (Jun 2005 – Mar 2007)</p>
+                    </div>
+                    </ul>
+                </section>
+                <section id="contact" class="my-8 text-center bg-accent p-6 rounded-lg shadow-lg">
+                    <i class="fa-solid fa-id-card-clip" />
+                    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+
+                    <p class="text-lg mb-4">
+                        <i class="fas fa-envelope mr-2"></i><a href="mailto:ajomathiu@gmail.com"
+                            class="text-primary">ajomathiu@gmail.com</a> |
+                        <i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/ajomathiu"
+                            class="text-primary" target="_blank">LinkedIn</a> |
+                        <i class="fa-solid fa-calendar mr-2"></i><a href="https://cal.com/ajo-mathew-xiiuah/30min"
+                            class="text-primary" target="_blank">Book a call</a>
+                    </p>
+                </section>
+            </main>
+            <footer class="bg-primary text-white p-6 text-center mt-8">
+                <p>&copy; 2025 Ajo's Portfolio. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
