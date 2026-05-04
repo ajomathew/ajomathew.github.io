@@ -186,7 +186,10 @@ params:
         #   token: "<token>"
         # Google Analytics
         google:
-          id: G-H4LBG7NDFZ
+          id: G-6GJSZXWB7F
+        # Microsoft Clarity
+        clarity:
+          projectId: qll18mcw3c
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>
