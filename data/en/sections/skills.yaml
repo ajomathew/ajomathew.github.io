@@ -1,0 +1,51 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/skills.html
+
+# your skills
+# give skill id as per your requirement
+skills:
+- name: Azure
+  summary: "Azure Private Endpoints, Azure Databricks, Azure Synapse Analytics, Azure Data Factory, App Service, Azure Automation, Storage / ADLS, Azure VM, Azure PowerShell API, Azure Container Service, Azure Container Registry, Azure SSO"
+  url: ""  # optional
+
+- name: DevOps
+  summary: "Azure DevOps, GitHub, TeamCity, Octopus Deploy, Terraform, Docker / Kubernetes"
+  url: ""  # optional
+
+- name: Infrastructure as Code
+  summary: "Azure Resource Management Template, Azure Biceps, Terraform, Ansible"
+  url: ""  # optional
+
+- name: AWS
+  summary: "AWS EC2, S3, Route 53-DNS, CloudFront, ELB, Auto Scaling, Elastic Beanstalk"
+  url: ""  # optional
+
+- name: Database
+  summary: "MSSQL, MySQL, Azure SQL, Azure CosmosDB, AWS RDS"
+  url: ""  # optional
+
+- name: Scripting
+  summary: "PowerShell, Shell/bash, Python"
+  url: ""  # optional
+
+- name: Search Engine
+  summary: "Azure Search, Apache Solr, Elastic Search"
+  url: ""  # optional
+
+- name: Application/Web Servers
+  summary: "Azure WebApp, IIS, Apache, Tomcat, Nginx"
+  url: ""  # optional
+
+- name: Operating Systems
+  summary: "Windows Server 2008/2008R2/2012, Linux Server- Ubuntu / Redhat(6-7)"
+  url: ""  # optional
+
+- name: Other Tools
+  summary: "SonarQube, Jira, SpaceWalk, WhiteSource, Packer, Nagios, NewRelic, Application Insights"
+  url: ""  # optional

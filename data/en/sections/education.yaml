@@ -1,0 +1,17 @@
+# section information
+section:
+  name: Education
+  id: education
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/education.html
+
+# your education
+degrees:
+- name: B.Tech in Computer Science
+  institution:
+    name: St. Joseph's College of Engineering & Technology
+    url: ""
+  start: 2007
+  end: 2011

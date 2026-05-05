@@ -1,0 +1,28 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Cloud and DevOps Architect
+
+# a summary about you
+summary: 'I am a highly skilled Cloud and DevOps Architect with over 12 years of experience in designing, deploying, and managing cloud infrastructure across Azure and AWS. My expertise lies in cloud automation, DevOps implementation, infrastructure as code (IaC), and CI/CD pipeline development to optimize application performance and scalability. At EY Global Delivery Services, I lead cloud platform architecture for data analytics workloads, ensuring security, automation, and efficiency while managing stakeholders and mentoring teams. Previously, at Good Methods Global (CareStack) and Mindcurv, I played a key role in cloud migrations, infrastructure automation, and performance optimization. My early career at Accenture involved managing large-scale AWS environments, CMS migrations, and enterprise cloud transformations. With a strong background in Terraform, Azure DevOps, Kubernetes, and CI/CD automation, I am passionate about driving innovation, improving cloud efficiency, and leading teams toward cutting-edge cloud solutions.'
+
+# your social links
+socialLinks:
+- name: GitHub
+  icon: "fab fa-github"
+  url: "https://github.com/ajo.mathew"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/ajo_mathew"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/ajomathiu/"

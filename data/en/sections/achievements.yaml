@@ -1,0 +1,22 @@
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  template: sections/achievements.html
+
+# your achievements
+achievements:
+- title: Azure Solutions Architect Expert
+  summary: "Certified Azure Solutions Architect Expert"
+  url: "https://learn.microsoft.com/api/credentials/share/en-us/ajomathew/6B4464E7CAAEAC14?sharingId=24CB62630ACB0427"
+
+- title: Microsoft Certified DevOps Engineer Expert
+  summary: "Certified DevOps Engineer Expert"
+  url: "https://learn.microsoft.com/api/credentials/share/en-us/ajomathew/21D69048DEBF0E49?sharingId=24CB62630ACB0427"
+
+- title: HashiCorp Certified Terraform Associate (003)
+  summary: "Certified Terraform Associate"
+  url: "https://www.credly.com/badges/80bc733b-895b-409a-adbf-f55a99d12261/public_url"

@@ -1,0 +1,123 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  template: sections/experiences.html
+
+# your experiences
+experiences:
+- company:
+    name: EY Global Delivery Services
+    url: ""
+  positions:
+  - designation: Azure DevOps Architect
+    start: Feb 2018
+    end: Present
+    responsibilities:
+    - Lead the design, deployment, and management of Azure DevOps platforms for Data Analytics workloads across the APAC region.
+    - Participate in RFP/RFI processes, providing technical expertise to shape cloud-based solutions.
+    - Manage key stakeholders, project resourcing, and a team of 10 members across multiple projects.
+    - Drive competency enablement by leading internal training initiatives, organizing "Lunch and Learn" sessions, and managing SME groups.
+
+  - designation: Cloud Platform Architect
+    start: Feb 2018
+    end: Present
+    responsibilities:
+    - Designed and provisioned Azure infrastructure for a Data Analytics Platform for a Hong Kong-based client to process on-premises data.
+    - Established secure connections between on-prem and cloud while ensuring strict security isolation.
+    - Developed Terraform modules to streamline platform component provisioning.
+    - Collaborated with Data Analytics Solution Architects to align infrastructure with business objectives.
+
+  - designation: Cloud Platform Architect / Manager
+    start: Feb 2018
+    end: Present
+    responsibilities:
+    - Designed and implemented a metadata-driven ETL and Data Ingestion Platform on Azure.
+    - Built robust and secure Data Analytics infrastructure leveraging Synapse Analytics, Databricks, ADLS Gen2, and Power BI.
+    - Established network and security architecture to meet enterprise security standards for on-prem to cloud connectivity.
+    - Developed Azure DevOps pipelines to automate CI/CD for Data Factory, Databricks, and Synapse Analytics.
+    - Led infra-automation using ARM templates, managing and updating Azure resources dynamically.
+
+  - designation: Cloud Platform & DevOps Manager
+    start: Feb 2018
+    end: Present
+    responsibilities:
+    - Designed a cloud platform to support M&A assisting tools, including CI/CD & IAC.
+    - Led collaborations with senior stakeholders and development leads to architect enterprise cloud platforms.
+    - Implemented secure networking infrastructure ensuring controlled access for developers and testers.
+    - Defined Infrastructure as Code (IaC) strategies using Terraform for multiple environments (Dev, Test, UAT, Load Test).
+    - Enforced code commit, branching strategies, and security gates within Azure DevOps pipelines.
+
+  - designation: Platform Enablement Manager – Azure
+    start: Feb 2018
+    end: Present
+    responsibilities:
+    - Led cloud migration of internally developed Data & Analytics solutions to PaaS and containerized environments.
+    - Implemented Data Lineage Solutions backed by Neo4j Database and Keylines for visualization.
+
+- company:
+    name: Good Methods Global (CareStack)
+    url: ""
+  positions:
+  - designation: Cloud Deployment Engineer
+    start: Jun 2016
+    end: Feb 2018
+    responsibilities:
+    - Led the migration of the full AWS stack to Azure, ensuring seamless transition and optimized performance.
+    - Designed and implemented CI/CD pipelines using TeamCity, Azure DevOps, and Octopus Deploy for automated application deployment.
+    - Developed Infrastructure as Code (IaC) using ARM templates, enabling end-to-end automated provisioning of new environments.
+    - Established standardized deployment processes for application stacks, improving efficiency and reducing downtime.
+    - Implemented application performance monitoring using NewRelic and Azure Application Insights for proactive issue detection and resolution.
+    - Designed and deployed Azure Automation solutions for cost management, optimizing resource utilization.
+    - Managed database schema version control and CI/CD pipelines, ensuring smooth and consistent database updates.
+    - Developed a Business Continuity Plan (BCP) for the CareStack product platform, ensuring resilience and disaster recovery readiness.
+
+- company:
+    name: Mindcurv
+    url: ""
+  positions:
+  - designation: Infrastructure Specialist Level 2
+    start: Feb 2016
+    end: Jun 2016
+    responsibilities:
+    - Set up CI/CD pipelines for both application and infrastructure deployment in AWS.
+    - Managed AWS services including EC2, ELB, Auto Scaling, S3, and Route 53-DNS for multiple projects.
+    - Deployed and maintained Hybris applications using Jenkins.
+    - Deployed and troubleshot Dockerized applications in production environments.
+    - Implemented Nagios-based monitoring, creating custom scripted health checks for infrastructure components.
+    - Set up and managed clustered Elasticsearch nodes for Hybris applications.
+    - Conducted disaster recovery operations for MySQL databases and application servers.
+    - Configured Logstash and Kibana for centralized log monitoring and analysis.
+    - Performed RedHat server security patching to maintain compliance and prevent vulnerabilities.
+
+- company:
+    name: Accenture Service PVT Ltd
+    url: ""
+  positions:
+  - designation: AWS Platform Engineer for Global Pharma Firm (Software Engineer)
+    start: Jun 2011
+    end: Feb 2016
+    responsibilities:
+    - Managed and maintained 500+ websites hosted on AWS EC2 across multiple regions.
+    - Provisioned and configured AWS resources such as EC2, ELB, Auto Scaling, S3, Route 53-DNS.
+    - Implemented CI/CD pipelines with Jenkins (CI) and AWS OpsWorks (CD) for seamless deployments.
+    - Automated infrastructure provisioning using AWS CloudFormation for scalable and repeatable deployments.
+    - Monitored application and infrastructure health using AWS CloudWatch, NewRelic, and CopperEgg.
+    - Administered Tridion CMS, providing application-level support and maintenance for enterprise websites.
+    - Configured Solr-based enterprise search solutions for multiple websites.
+    - Set up Windows Domain Controllers with replication inside AWS VPC.
+    - Implemented log rotation strategies for application and cloud resources, archiving logs on S3, Glacier, and RedShift.
+    - Ensured disaster recovery readiness and automated backup strategies for critical applications and databases.
+
+  - designation: AWS Platform Engineer for CMS Migration (Assistant Software Engineer)
+    start: Jun 2011
+    end: Feb 2016
+    responsibilities:
+    - Led the migration of multiple websites (198) to Tridion CMS hosted on AWS.
+    - Managed and maintained virtual machines (VMs) and migrated workloads from legacy vendors to AWS Cloud.
+    - Conducted administrative tasks for Tridion Content Management Engine (CME) and Broker Databases.
+    - Upgraded Tridion CME versions and ensured backward compatibility of applications.
+    - Provided application-level support for 198 websites and legacy server applications.

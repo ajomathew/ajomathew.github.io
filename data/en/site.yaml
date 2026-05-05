@@ -1,0 +1,10 @@
+# Meta description for your site.  This will help the search engines to find your site.
+description: Cloud, DevOps, Automation, Security. Everything I have experienced and experimented on cloud and deployments.
+
+# Specify OpenGraph Headers
+openGraph:
+  title: Ajo's Blog
+  type: website
+  description: Cloud, DevOps, Automation, Security. Everything I have experienced and experimented on cloud and deployments.
+  image: /assets/images/bio-gi.png
+  url: https://blog.ajomathew.dev
