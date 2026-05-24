@@ -81,6 +81,9 @@ author:
     - label: "Portfolio"
       icon: "fas fa-fw fa-briefcase"
       url: "http://blog.ajomathew.dev/portfolio"
+    - label: "Vibe Coded - Kids activvity"
+      icon: "fas fa-fw fa-gamepad"
+      url: "https://blog.ajomathew.dev/kids-activity"
 
 footer:
   links:
